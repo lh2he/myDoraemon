@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			#header{
+				position: absolute;
+				width: 200px;
+				height: 200px;
+				border-radius:  120px 120px 110px 110px ;
+				background-color: #0000FF;
+					
+			}
+			#face{
+				position: absolute;
+				top: 50px;
+				left: 10px;
+				width: 180px;
+				height: 150px;
+				border-radius:  130px 130px 140px 140px ;
+				background-color: #FFFFFF;
+				
+			}
+			#huxu0{
+				position: absolute;
+				left: 50px;
+				top: 70px;
+				width: 70px;
+				height: 2px;
+				background-color: black;
+				transform: rotate(90deg); 	
+			}
+			#huxu11{
+				position: absolute;
+				left: 15px;
+				top: 50px;
+				width: 70px;
+				height: 2px;
+				background-color: black;
+				transform: rotate(20deg); 	
+			}
+			#huxu21{
+				position: absolute;
+				left: 85px;
+				top: 50px;
+				width: 70px;
+				height: 2px;
+				background-color: black;
+				transform: rotate(160deg); 	
+			}
+			#huxu12{
+				position: absolute;
+				left: 15px;
+				top: 65px;
+				width: 70px;
+				height: 2px;
+				background-color: black;
+				transform: rotate(0deg); 	
+			}
+			#huxu22{
+				position: absolute;
+				left: 85px;
+				top: 65px;
+				width: 70px;
+				height: 2px;
+				background-color: black;
+				transform: rotate(0deg); 	
+			}
+			#huxu13{
+				position: absolute;
+				left: 15px;
+				top: 85px;
+				width: 70px;
+				height: 2px;
+				background-color: black;
+				transform: rotate(340deg); 	
+			}
+			#huxu23{
+				position: absolute;
+				left: 85px;
+				top: 85px;
+				width: 70px;
+				height: 2px;
+				background-color: black;
+				transform: rotate(20deg); 	
+			}
+			#nose{
+				position: absolute;
+				left: 70px;
+				top: 15px;
+				width: 30px;
+				height: 30px;
+				background-image:  radial-gradient( #FFFFFF,40%,#FF0000);
+			    border-radius:  15px ;
+				border: 3px #000000;
+			}
+			#eyes1{
+				position: absolute;
+				left: 50px;
+				top: 25px;
+				width: 40px;
+				height: 50px;
+				border-radius:  20px ;
+				background-image:  radial-gradient( #FFFFFF,75%,#000000);
+				
+			}
+			#eyes2{
+				position: absolute;
+				left: 100px;
+				top: 25px;
+				width: 40px;
+				height: 50px;
+				border-radius:  20px ;
+				background-image:  radial-gradient( #FFFFFF,75%,#000000);
+				
+			}
+			#eyes11{
+				position: absolute;
+				left: 13px;
+				top: 25px;
+				width: 16px;
+				height: 16px;
+				border-radius:  8px ;
+				background-color: #000000;
+				z-index: 1;
+			}
+			#eyes22{
+				position: absolute;
+				left: 11px;
+				top: 25px;
+				width: 16px;
+				height: 16px;
+				border-radius:  8px ;
+				background-color: #000000;
+				z-index: 1;
+			}
+			/*
+			#mouth{
+				position: absolute;
+				left: 45px;
+				top: 145px;
+				width: 100px;
+				height: 50px;
+				background-color: #FF0000;
+				z-index: 3;
+			    border-radius:0px  0px 50px 50px  ;
+				
+			}
+			#mouth1{
+				position: absolute;
+				left: 15px;
+				top: 0px;
+				width: 70px;
+				height: 35px;
+				background-color:#FFFFFF;
+				z-index: 3;
+			    border-radius:0px  0px 35px 35px  ;
+				z-index: 3;
+			}
+			*/
+		    #mouth{
+		    	position: absolute;
+		    	left: 47px;
+		    	top: 145px;
+				width: 78px;
+				height: 30px;
+				background-color:#FFFFFF;
+				border-radius:0px  0px 44px 44px  ;
+				z-index: 3;
+				border: 9px solid #FF0000;
+		    }
+			#body{
+				position: absolute;
+				left: 28px;
+				top: 203px;
+				width: 150px;
+				height: 174px;
+				border-radius:  40px 40px 40px 40px ;
+				background-color: #0000FF;
+			}
+			#bodydu{
+				position: absolute;
+				top: 0px;
+				left: 10px;
+				width: 130px;
+				height: 140px;
+				border-radius:  130px 130px 140px 140px ;
+				background-color: #FFFFFF;
+			}
+			#bodytie{
+				position: absolute;
+				left: 16px;
+				top: -1px;
+				width: 112px;
+				height: 15px;
+				background-color: red;
+				opacity: 0.6;
+				transform: rotate(0deg); 
+			}
+			#bodyduling{
+				position: absolute;
+				left: 47px;
+				top: 6px;
+				width: 32px;
+				height: 32px;
+				background-image:  radial-gradient( #FFFFFF,40%,#FF0000);
+				border-radius:  15px ;
+				border: 3px #000000;
+				z-index: 3;
+			}
+			#bodydudou{
+				position: absolute;
+				left: 14px;
+				top: 67px;
+				width: 96px;
+				height: 48px;
+				background-color:#FFFFFF;
+				border-radius:0px  0px 40px 40px  ;
+				z-index: 3;
+				border: 4px solid #000000;
+			}
+			#bodyduhand1{
+				position: absolute;
+				left: -10px;
+				top: 30px;
+				width: 77px;
+				height: 28px;
+				background-color: #0000FF;
+				transform: rotate(50deg);
+				border-radius:  18px 18px 5px 5px ;
+				z-index: 2;
+			}
+			#bodyduhand2{
+				position: absolute;
+				left: 63px;
+				top: 30px;
+				width: 77px;
+				height: 28px;
+				background-color: #0000FF;
+				transform: rotate(130deg); 
+				border-radius: 0px 0px 18px 18px  ;
+				z-index: 2;
+			}
+			#feet{
+				position: absolute;
+				left: 17px;
+				top: 373px;
+				width: 176px;
+				height: 44px;
+				border-radius:  40px 40px 15px 15px ;
+				background-color: #0000FF;
+				
+			}
+			#feetkong{
+				position: absolute;
+				left: 62px;
+				top: 29px;
+				width: 42px;
+				height: 20px;
+				border-radius:  20px 20px 5px 5px ;
+				background-color: #FFFFFF;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+		    <div id="header" >
+			    <div id="face">
+				     <div id="huxu0"></div>
+					 <div id="huxu11"></div>
+					 <div id="huxu12"></div>
+					 <div id="huxu13"></div>
+					 <div id="huxu21"></div>	 
+					 <div id="huxu22"></div>	 
+					 <div id="huxu23"></div>
+					 <div id="nose"></div>
+					 
+			    </div>
+				<div id="eyes1" ><div id="eyes11"></div></div>
+				<div id="eyes2" ><div id="eyes22"></div></div>
+				<div id="mouth"></div>
+		    </div>
+		</div>
+		<div>
+			<div id="body">
+				<div id="bodydu">
+				      <img id="bodyduling"  src="铃铛小图片.jpg" />
+					  <div id="bodydudou"></div>
+					  <div id="bodyduhand1"></div>
+					  <div id="bodyduhand2"></div>
+				</div>
+				<div id="bodytie"></div>
+			</div>
+		</div>
+		<div>
+			<div id="feet">
+				<div id="feetkong"></div>
+			</div>
+		</div>
+		
+	</body>
+</html>
